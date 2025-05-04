@@ -1,0 +1,78 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('/fonts/AeonikTRIAL-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('/fonts/AeonikTRIAL-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('/fonts/AeonikTRIAL-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('/fonts/AeonikTRIAL-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@theme inline {
+  --font-sora: 'Sora', 'sans-serif';
+  --font-aeonik: 'Aeonik', 'sans-serif';
+
+  --leading-snug: 1.4;
+  --tracking-tightest: 0.013em;
+
+  --color-background: #ffffff;
+  --color-background-light-gray: #f7f8f9;
+  --color-foreground: #000000;
+  --color-navbar-border: #2f2f2f;
+  --color-black-1: #13161e;
+  --color-black-2: #12141d;
+  --color-black-3: #0f1311;
+  --color-gray: #bfbfbf;
+  --color-orange: #ff5c00;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-foreground font-sora;
+}
+
+button {
+  @apply cursor-pointer disabled:cursor-default;
+}
+
+@layer utilities {
+  .container-center {
+    @apply max-w-7xl mx-auto px-4 lg:px-6;
+  }
+
+  .hidden-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hidden-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .absolute-center {
+    @apply absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2;
+  }
+}
