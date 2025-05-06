@@ -21,7 +21,7 @@ const features = [
 
 export const Features = () => {
   return (
-    <div className='bg-[linear-gradient(360deg,_#FFFFFF_51.58%,_#13161E_51.58%)] w-full relative overflow-hidden'>
+    <div className='bg-[linear-gradient(360deg,_#FFFFFF_51.58%,_#13161E_51.58%)] w-full relative'>
       <div className='pt-11 lg:pt-16 pb-16 lg:pb-30 container-center'>
         <div className='relative z-20 px-5 pt-11 pb-16 lg:pt-16 lg:px-10 xl:px-16 bg-white shadow-[4px_14px_31px_rgba(0,7,31,0.1),_14px_54px_56px_rgba(0,8,31,0.09)] rounded-[36px] flex flex-col items-center justify-center gap-11'>
           <h2 className='font-semibold text-3xl/[1.2] lg:text-4xl/snug max-w-[306px] sm:max-w-[500px] mx-auto text-center'>
@@ -91,8 +91,8 @@ export const Features = () => {
         </div>
       </div>
 
-      <div className='absolute max-md:left-[60%] max-md:-translate-x-[60%] md:left-0 md:right-0 max-md:-top-35 md:bottom-16'>
-        <FeaturesLine className='w-[1687px] max-md:h-[817px] md:w-full max-md:-rotate-[20.28deg]' />
+      <div className='absolute max-md:left-[55%] max-md:-translate-x-[55%] md:left-0 md:right-0 max-md:-top-20 md:bottom-16'>
+        <FeaturesLine className='w-[1687px] max-md:h-[817px] md:w-full md:rotate-[-51.03deg] md:max-w-[1920px] md:mx-auto max-md:rotate-[-71.31deg]' />
       </div>
     </div>
   );

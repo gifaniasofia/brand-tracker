@@ -22,7 +22,7 @@ const features = [
 export const Hero = () => {
   return (
     <div className='relative isolate overflow-hidden bg-black-1 pt-26 font-aeonik font-normal'>
-      <div className='container-center pt-15 lg:pt-20 pb-23'>
+      <div className='container-center pt-15 lg:pt-20 pb-23 relative'>
         <div className='mb-4.5 flex justify-center'>
           <div className='flex items-center gap-2'>
             <div className='z-10 flex -space-x-2.5 rtl:space-x-reverse'>

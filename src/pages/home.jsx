@@ -7,7 +7,7 @@ import { Steps } from '@/features/home/steps';
 
 export default function Home() {
   return (
-    <div className='overflow-hidden'>
+    <div className='relative overflow-hidden'>
       <Hero />
       <Features />
       <ClientRevelations />

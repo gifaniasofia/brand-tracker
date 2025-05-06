@@ -44,6 +44,10 @@
   --color-black-3: #0f1311;
   --color-gray: #bfbfbf;
   --color-orange: #ff5c00;
+
+  --breakpoint-8xl: 96rem;
+  --breakpoint-9xl: 120rem;
+  --breakpoint-10xl: 160rem;
 }
 
 html {
