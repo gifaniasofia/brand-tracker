@@ -91,8 +91,16 @@ export const Features = () => {
         </div>
       </div>
 
-      <div className='absolute max-md:left-[55%] max-md:-translate-x-[55%] md:left-0 md:right-0 max-md:-top-20 md:bottom-16'>
+      <div className='lg:hidden absolute max-md:left-[55%] max-md:-translate-x-[55%] md:left-0 md:right-0 max-md:-top-20 md:bottom-16'>
         <FeaturesLine className='w-[1687px] max-md:h-[817px] md:w-full md:rotate-[-51.03deg] md:max-w-[1920px] md:mx-auto max-md:rotate-[-71.31deg]' />
+      </div>
+
+      <div className='max-lg:hidden absolute bottom-16 inset-x-0'>
+        <img
+          src='/images/feature-line.webp'
+          alt=''
+          className='w-full h-auto md:max-h-[1100px] aspect-[1440/852]'
+        />
       </div>
     </div>
   );
